@@ -14,3 +14,12 @@ HALInterface:
   lib_file: "libXBotKuka"
   lib_name: "KUKA"
 
+ModelInterface:
+  model_type: "RBDL"
+  is_model_floating_base: "false"
+
+# Either use robotlogy env var or set absolute path
+XBotInterface:
+  urdf_path: "/Absolute/path/to/clone/ADVR_shared/iiwa7/urdf/kuka.urdf"
+  srdf_path: "/Absolute/path/to/clone/ADVR_shared/iiwa7/srdf/kuka.srdf"
+  joint_map_path: "/Absolute/path/to/clone/ADVR_shared/iiwa7/joint_map/kuka_joint_map.yaml"
